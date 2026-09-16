@@ -23,7 +23,7 @@
         .header-banner img { width: 100%; height: auto; display: block; }
         .title-container { padding: 12px 20px 4px 20px; text-align: center; }
         .title-text { font-size: 0.85rem; font-weight: 800; line-height: 1.4; color: #475569; }
-          
+
         .login-bottom-logos {
             display: flex; justify-content: center; align-items: center; gap: 15px; padding: 5px 20px 15px 20px; border-bottom: 1px solid #f1f5f9; margin-bottom: 5px;
         }
@@ -41,7 +41,8 @@
             width: 100%; padding: 14px; border: none; border-radius: 12px; background: #16a34a; color: #ffffff; font-size: 0.95rem; font-weight: 900; cursor: pointer; box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
         }
         .btn-confirm:hover { background: #15803d; }
-              #exam-ui { padding: 16px; }
+
+        #exam-ui { padding: 16px; }
         .top-bar { display: flex; justify-content: space-between; align-items: center; background: #1e3a8a; color: #ffffff; padding: 10px 16px; border-radius: 10px; margin-bottom: 8px; font-size: 11px; font-weight: 800; }
         .timer-badge { padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 900; background: rgba(255, 255, 255, 0.2); }
         .progress-box { width: 100%; height: 6px; background: #e2e8f0; border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
@@ -58,7 +59,8 @@
         .exam-img-wrap { text-align: center; margin-bottom: 10px; }
         .exam-img { width: 100%; max-height: 160px; object-fit: contain; border-radius: 8px; cursor: zoom-in; border: 1px solid #cbd5e1; background: #fff; }
         .img-hint { font-size: 10px; color: #0284c7; font-weight: 800; margin-top: 3px; }
-              #img-modal {
+
+        #img-modal {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 9999; justify-content: center; align-items: center; padding: 20px; cursor: zoom-out;
         }
         #img-modal img { max-width: 95%; max-height: 90vh; border-radius: 8px; }
@@ -151,7 +153,7 @@
                 <img src="https://i.imgur.com/KoJ00JT.jpeg" alt="Gxoker" class="header-logo">
             </div>
             <div class="result-hud">
-                <div class="final-res-title">Created By G-XOKER</div>
+                <div class="final-res-title">Created By G-XOKER </div>
                 <div class="score-circle">
                     <div class="score-num" id="res-score">0</div>
                     <div class="score-lbl">မှတ် (100)</div>
@@ -176,8 +178,8 @@
             <div id="review-content" style="padding: 12px 0;"></div>
             <div class="action-container" style="padding: 10px 0 0 0;"><button class="btn-submit" onclick="closeReview()">ရလဒ်စာရွက်သို့ ပြန်သွားမည်</button></div>
         </div>
-  </div>
-                   <script>
+    </div>
+<script>
     const allQuestions = [
         {
             q: "1. 다음 그림을 보고 맞는 단어나 문장을 고르십시오.\n\n<div class='exam-img-wrap'><img src='https://i.imgur.com/ZkEmC11.jpeg' class='exam-img' onclick='openImageModal(this.src)'><div class='img-hint'>🔍 (ပုံကိုနှိပ်၍ ချဲ့ကြည့်နိုင်သည်)</div></div><img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
@@ -220,34 +222,34 @@
             a: ["통장 정리 및 조회를 하는 사람이 가장 많습니다.", "계좌 이체를 이용하는 사람이 두 번째로 많습니다.", "고향으로 송금하기 위해 이용하는 사람이 가장 많습니다.", "현금 인출을 이용하는 사람이 절반을 넘습니다."], c: 2
         }
     ];
-                         const readingQuestionsPart2 = [
+    const readingQuestionsPart2 = [
         {
-            q: "11. 다음 그래프를 보고 내용과 알맞지 않은 것을 고르십시오.\n\n<div class='exam-img-wrap'><img src='https://i.imgur.com/xKrumGr.jpeg' class='exam-img' onclick='openImageModal(this.src)'><div class='img-hint'>🔍 (ပုံကိုနှိပ်၍ ချဲ့ကြည့်နိုင်သည်)</div></div><img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["등산을 즐기는 사람들이 가장 적습니다.", "사진 촬영을 선호하는 사람이 요리보다 많습니다.", "악기 연주를 하는 사람이 전체의 절반을 넘습니다.", "요리보다 등산을 좋아하는 사람이 더 적습니다."], c: 1
+            q: "11. 다음 빈칸에 들어갈 가장 알맞은 것을 고르십시오.\n\n은행에서 새 통장을 만들려면 본인을 확인할 수 있는 신분증과 필요한 ________을/를 제출해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
+            a: ["영수증", "서류", "수표", "우편번호"], c: 1
         },
         {
-            q: "12. 다음 그래프를 보고 내용과 같은 것을 고르십시오.\n\n<div class='exam-img-wrap'><img src='https://i.imgur.com/HYBMXtD.jpeg' class='exam-img' onclick='openImageModal(this.src)'><div class='img-hint'>🔍 (ပုံကိုနှိပ်၍ ချဲ့ကြည့်နိုင်သည်)</div></div><img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["좌석 번호는 E열 12번입니다.", "관람료는 만 이천 원입니다.", "영화 상영 시간은 저녁 7시 30분입니다.", "이 영화는 9월 20일에 상영합니다."], c: 0
+            q: "12. 다음 빈칸에 들어갈 가장 알맞은 것을 고르십시오.\n\n가: 베트남으로 EMS를 보내려고 하는데 요금이 얼마나 ________?\n나: 무게를 달아 봐야 알 수 있습니다. 저울 위에 올려놓으세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
+            a: ["걸립니까", "나옵니까", "듭니까", "찾습니까"], c: 2
         },
         {
-            q: "13. 다음 글을 읽고 무엇에 대한 글인지 고르십시오.\n\n한국의 전통 주거 공간인 '한옥'은 자연 친화적인 건축 양식입니다. 나무, 흙, 돌 등 자연에서 얻은 재료만을 사용하여 집을 짓기 때문에 공기가 잘 통하고 인체에 해롭지 않습니다. 특히 겨울철 추위에 대비해 방바닥 아래에 아궁이 불을 지펴 난방을 하는 독특한 '온돌' 시스템이 발달해 있는 것이 가장 큰 특징입니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["한국의 전통 가옥 한옥의 특징", "현대식 아파트 인테리어 시공법", "건축 자재 철물 종류와 가격", "농촌 비닐하우스 난방 관리법"], c: 0
+            q: "13. 다음 빈칸에 들어갈 가장 알맞은 것을 고르십시오.\n\n가: 달러를 한국 원화로 바꾸고 싶은데 어디로 가야 해요?\n나: 가까운 은행에 가서 ________ 신청을 하시면 됩니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
+            a: ["송금", "환전", "출금", "적금"], c: 1
         },
         {
-            q: "14. 다음 글을 읽고 무엇에 대한 글인지 고르십시오.\n\n공장이나 창고에서 사용하는 전동 지게차는 무거운 파렛트 화물을 안전하고 빠르게 이동시키는 필수 물류 장비입니다. 지게차를 운전할 때는 반드시 안전벨트를 착용해야 하며, 짐을 높이 쌓은 채로 급커브를 돌면 전복 사고의 위험이 있으므로 속도를 반드시 줄여야 합니다. 또한 이동 중에는 주변 보행자가 있는지 항상 사이드미러로 확인해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["지게차 안전 운행 수칙", "화물 상자 포장 순서", "팔레트 재고 조사 요령", "물류창고 화재 진압법"], c: 0
+            q: "14. 다음 대화의 빈칸에 들어갈 알맞은 말을 고르십시오.\n\n가: 항공편으로 소포를 보내면 고향에 언제쯤 ________?\n나: 보통 일주일 정도 걸립니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
+            a: ["도착할까요", "보낼까요", "포장할까요", "신청할까요"], c: 0
         },
         {
-            q: "15. 다음 설명에 알맞은 어휘를 고르십시오.\n\n가을철 논에서 벼를 베어내는 동시에 낱알을 줄기에서 골라내고 짚을 잘게 부수는 작업을 한 번에 처리할 수 있는 대형 농업용 수확 기계입니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["트랙터", "콤바인", "이앙기", "경운기"], c: 1
+            q: "15. 다음은 무엇에 대한 설명입니까?\n\n돈을 안전하게 보관하기 위해 은행 계좌에 입금해 두고 일정 기간 동안 이자를 받는 금융 상품을 의미합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
+            a: ["예금", "환전", "대출", "결제"], c: 0
         },
         {
-            q: "16. 다음 설명에 알맞은 어휘를 고르십시오.\n\n건축 현장에서 콘크리트를 부어 넣은 후 형태가 굳어질 때까지 원래의 모양과 지지력을 유지할 수 있도록 틀을 만들어 잡아주는 가설 구조물입니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["거푸집", "비계 파이프", "앙코르 볼트", "절연 테이프"], c: 0
+            q: "16. 다음은 무엇에 대한 설명입니까?\n\n급한 편지나 서류, 소포 등을 외국으로 가장 빠르고 안전하게 배달해 주는 우체국의 특급 국제 우편 서비스입니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
+            a: ["등기우편", "일반우편", "EMS (국제특급우편)", "선편우편"], c: 2
         },
         {
-            q: "17. 다음 글을 읽고 글의 중심 내용으로 가장 알맞을 것을 고르십시오.\n\n세종대왕은 조선 시대의 훌륭한 왕으로, 백성들이 글을 몰라 억울한 일을 당해도 자신의 뜻을 제대로 표현하지 못하는 것을 안타깝게 여겼습니다. 이에 누구나 쉽고 빠르게 배워 쓸 수 있는 우리 고유의 문자 '훈민정음(한글)'을 1443년에 창제하여 1446년에 세상에 널리 알렸습니다. 한글은 배우기 매우 쉽고 과학적이어서 오늘날 세계적인 문자유산으로 인정받고 있습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["세종대왕은 백성들을 위해 한글을 직접 만들었습니다.", "훈민정음은 배우기 너무 어려워서 백성들이 포기했습니다.", "한글은 조선 시대가 아니라 삼국 시대에 처음 생겼습니다.", "세종대왕은 한자만 사용하도록 엄격하게 지시했습니다."], c: 0
+            q: "17. 다음 글을 읽고 글의 중심 내용으로 가장 알맞은 것을 고르십시오.\n\n소포를 보낼 때는 상자가 운송 도중에 터지지 않도록 테이프로 단단히 붙여야 합니다. 깨지기 쉬운 물건은 에어캡(뾱뾱이)으로 여러 겹 싸야 하며, 받는 사람의 이름, 전화번호, 우편번호와 주소를 정확하게 적어야 분실이나 반송을 막을 수 있습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
+            a: ["우체국 창구 이용 시간", "안전한 소포 발송 요령 및 주의사항", "택배 배송 비용 계산법", "분실된 우편물 보상 규정"], c: 1
         },
         {
             q: "18. 다음 글을 읽고 글의 중심 내용으로 가장 알맞은 것을 고르십시오.\n\n일반 은행의 창구 업무 시간은 보통 평일 오전 9시부터 오후 4시까지입니다. 주말과 공휴일에는 영업하지 않지만, 현금 자동 입출금기(ATM)나 스마트폰 뱅킹을 이용하면 휴일에도 입출금과 계좌 이체 서비스를 24시간 언제든지 이용할 수 있습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
@@ -259,7 +261,7 @@
         },
         {
             q: "20. 다음 글을 읽고 내용과 같은 것을 고르십시오.\n\n우체국에서는 편지와 소포 배달뿐만 아니라 예금, 보험 같은 금융 업무도 함께 처리합니다. 평일에는 오전 9시부터 오후 6시까지 운영하며 일반적인 주말에는 창구 문을 닫습니다. 해외로 소포를 보낼 때 부패하기 쉬운 음식물이나 폭발 위험이 있는 배터리류, 현금 등은 접수가 금지되어 있으므로 포장하기 전에 반드시 확인해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>",
-            a: ["우체국에서는 금융 업무를 취급하지 않습니다.", "주말에도 전국의 모든 우체국 창구가 정상 근무합니다.", "음식물이나 배터리류는 해외 소포로 보낼 수 없습니다.", "우체국의 우편 접수 마감 시간은 평일 오후 4시입니다."], c: 2
+            a: ["우체국에서는 금융 업무를 취급하지 않습니다.", "주말에는 전국의 모든 우체국 창구가 정상 근무합니다.", "음식물이나 배터리류는 해외 소포로 보낼 수 없습니다.", "우체국의 우편 접수 마감 시간은 평일 오후 4시입니다."], c: 2
         }
     ];
 
@@ -273,7 +275,8 @@
     let totalSeconds = 20 * 60; // 20 မိနစ်
     let initialSeconds = totalSeconds;
     let timerInterval = null;
-                         function triggerExam() {
+
+    function triggerExam() {
         const nameInput = document.getElementById("username-field").value.trim();
         const passportInput = document.getElementById("passport-field").value.trim();
         const sectorInput = document.getElementById("sector-field").value;
@@ -351,7 +354,7 @@
 
     function prevQ() { if (currentIndex > 0) loadQuestion(currentIndex - 1); }
     function nextQ() { if (currentIndex < allQuestions.length - 1) loadQuestion(currentIndex + 1); }
-                         function openImageModal(imgSrc) {
+    function openImageModal(imgSrc) {
         const modal = document.getElementById("img-modal");
         document.getElementById("modal-img-element").src = imgSrc;
         modal.style.display = "flex";
@@ -391,8 +394,9 @@
         document.getElementById("res-sector").textContent = studentSector;
         document.getElementById("res-acc").textContent = `${correctCount} / 20 (${finalScore} မှတ်)`;
         document.getElementById("res-time").textContent = timeStr;
-                                     }
-                         function showReview() {
+                }
+
+    function showReview() {
         document.getElementById("result-screen").style.display = "none";
         const reviewContainer = document.getElementById("review-screen");
         const reviewContent = document.getElementById("review-content");
@@ -439,3 +443,8 @@
 </script>
 </body>
 </html>
+
+
+
+
+
